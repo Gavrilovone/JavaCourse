@@ -5,7 +5,7 @@ package lesson5;
 public class Human {
     
     String name;
-    Car3 car;
+    Car4 car;
     BankAccount bA;
     
     void info(){
@@ -23,7 +23,7 @@ public class Human {
          
          Human h =new Human();
          h.name = "Алексей";
-         h.car= new Car3("Красный","V8");
+         h.car= new Car4("Красный","V8",60);
          h.bA=new BankAccount(18,200);
          h.info();
          
