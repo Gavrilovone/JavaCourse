@@ -27,7 +27,7 @@ public class Test6 {
         double[] array = new double[]{1.2,6.9,8,-6.2}; 
         
         maxMin(array);
-        maxMin(new double[]{2.5, 4});
+        maxMin(new double[]{2.5, 4, 1, 5});
         
     }
 }

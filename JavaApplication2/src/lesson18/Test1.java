@@ -12,7 +12,7 @@ public class Test1 {
         String[] array2;
         double[][] array3; // двумерный массив типа данных double
         int[][] array4;
-        // 2 этап allocation(рпспределение) на этом этапе указывается размер:
+        // 2 этап allocation(распределение) на этом этапе указывается размер:
 
         array1 = new int[8]; // длина массива 8
         array2 = new String[3];
