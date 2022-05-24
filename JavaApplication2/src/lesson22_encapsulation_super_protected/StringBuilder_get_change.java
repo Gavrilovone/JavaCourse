@@ -17,12 +17,8 @@ public class StringBuilder_get_change {
  *
  * class Test {
  *
- * public static void main(String[] args) { Hummen h1 = new Hummen(); h1.setName(new StringBuilder("Николай")); 
- * System.out.println(h1.getName());// Николай
- *                                     мы изменили имя через метод get , это очень не хорошая ошибка.
- *                                     мы не должны это мочь потому что с помощью get мы должны только
- *                                     получать или приравнивать его, но не менять
- * System.out.println(h1.getName()); Николай!!!
+ * public static void main(String[] args) { Hummen h1 = new Hummen(); h1.setName(new StringBuilder("Николай")); System.out.println(h1.getName());// Николай мы изменили имя через метод get ,
+ * это очень не хорошая ошибка. мы не должны это мочь потому что с помощью get мы должны только получать или приравнивать его, но не менять System.out.println(h1.getName()); Николай!!!
  *
  * }
  * }
