@@ -4,6 +4,17 @@
  * 
  * Методы считаются overridden если:
  * - имя в sub классе такое же как и в parent классе
+ * - список аргументов в sub классе такой же как и в parent классе
+ * - return type в parent классе такой же, что и в parent классе. либо return type могут  в sub
+ * классе это sub класс return type из parent класса(covariant return type) ковариантный. т.е. все sub классы
+ * родительского класса могут быть  в качестве return type
+ * access modifier в sub классе должен быть такой же или менее строгий чем в parent классе. потому что 
+ * например если бы у parent класса был бы дефолтный, а  у sub класса был бы access modifier более строгий 
+ * например(private), то следующий наследник уже не видел бы родителя и вся логика наследования ломается
+ * - метод с sub классе тоже должен быть non-static
+ * 
+ * overriding может быть только у методов. у variable его быть не может!
+ * 
  */
 package lesson23_Overriding_Hiding_Final;
 
@@ -11,8 +22,25 @@ public class Method_overriding {
     public static void main(String[] args) {
         Employee e = new Employee();
         Teacher1 t = new Teacher1();
+        Employee e2 = new Teacher1();
+        /**
+         * несмотря на то что e2 это reference переменная типа Employee настоящий объект на который
+         * ссылается переменнаяe e2 это объект класса Teacher1
+         * 
+         * но как определить когда вызывается метод из типа данных переменной(в данном случае Employee) или из 
+         * типа данных созданного объекта(в данном случае Teacher1)?  поможет определение Biтding(связь)
+         * Binding - это определение вызываемого метода, основываясь на объекте который производит вызов или
+         * тип данных reference variable
+         * 
+         * Существует compile time binding(во время компиляции, по другому он называется static binding)
+         * к этому типу binding относится private methods, static methods, final methods(все эти методы 
+         * не могут быть overridded)
+         * 
+         * и run time binding(когда компилятор не в силах определить) это происходит runtime dj время выполнения
+         */
         e.eat();// кушает работник
         t.eat(); // кушает учитель
+        e2.eat(); // кушает учитель
     }
 }
 
@@ -39,8 +67,11 @@ class Teacher1 extends Employee {
     void teach() {
         System.out.println("Учит");
     }
+   
     void eat() { // overridden метод
         System.out.println("Кушает учитель");
     }
-
+        
 }
+
+
