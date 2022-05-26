@@ -23,21 +23,7 @@ public class Method_overriding {
         Employee e = new Employee();
         Teacher1 t = new Teacher1();
         Employee e2 = new Teacher1();
-        /**
-         * несмотря на то что e2 это reference переменная типа Employee настоящий объект на который
-         * ссылается переменнаяe e2 это объект класса Teacher1
-         * 
-         * но как определить когда вызывается метод из типа данных переменной(в данном случае Employee) или из 
-         * типа данных созданного объекта(в данном случае Teacher1)?  поможет определение Biтding(связь)
-         * Binding - это определение вызываемого метода, основываясь на объекте который производит вызов или
-         * тип данных reference variable
-         * 
-         * Существует compile time binding(во время компиляции, по другому он называется static binding)
-         * к этому типу binding относится private methods, static methods, final methods(все эти методы 
-         * не могут быть overridded)
-         * 
-         * и run time binding(когда компилятор не в силах определить) это происходит runtime dj время выполнения
-         */
+       
         e.eat();// кушает работник
         t.eat(); // кушает учитель
         e2.eat(); // кушает учитель
