@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/Method_overriding.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/different_return_type_override.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/Binding.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/Binding_example_private_static_final.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/reference_variable_method_call.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/Example3.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/Example_hide.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson23_Overriding_Hiding_Final/Keyword_super.java</file>
         </group>
     </open-files>
 </project-private>

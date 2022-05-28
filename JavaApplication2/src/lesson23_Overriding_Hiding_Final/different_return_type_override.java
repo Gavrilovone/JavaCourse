@@ -1,6 +1,6 @@
 package lesson23_Overriding_Hiding_Final;
 
-public class different_return_type_override {
+public class Different_return_type_override {
     public static void main(String[] args) {
         
     }

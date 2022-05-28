@@ -2,7 +2,7 @@ package lesson23_Overriding_Hiding_Final;
 
 public class Return_type_and_reference_varuable {
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         /**
          * Мы могли написать:
          */
@@ -92,5 +92,5 @@ class Driver extends Employee {
         System.out.println("Водит");
     }
 
-  }
+ }
 

@@ -5,7 +5,7 @@
  * Методы считаются overridden если:
  * - имя в sub классе такое же как и в parent классе
  * - список аргументов в sub классе такой же как и в parent классе
- * - return type в parent классе такой же, что и в parent классе. либо return type могут  в sub
+ * - return type в parent классе такой же, что и в parent классе. либо return type в sub
  * классе это sub класс return type из parent класса(covariant return type) ковариантный. т.е. все sub классы
  * родительского класса могут быть  в качестве return type
  * access modifier в sub классе должен быть такой же или менее строгий чем в parent классе. потому что 
@@ -14,12 +14,12 @@
  * - метод с sub классе тоже должен быть non-static
  * 
  * overriding может быть только у методов. у variable его быть не может!
- * 
+ * Если мы не хотим чтобы наш метод был перезаписан в sublasse, мы делаем его final в parent classe
  */
 package lesson23_Overriding_Hiding_Final;
 
 public class Method_overriding {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         Employee e = new Employee();
         Teacher1 t = new Teacher1();
         Employee e2 = new Teacher1();
@@ -54,6 +54,7 @@ class Teacher1 extends Employee {
         System.out.println("Учит");
     }
    
+    @Override
     void eat() { // overridden метод
         System.out.println("Кушает учитель");
     }

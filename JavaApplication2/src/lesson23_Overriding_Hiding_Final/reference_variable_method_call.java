@@ -1,6 +1,6 @@
 package lesson23_Overriding_Hiding_Final;
 
-public class reference_variable_method_call {
+public class Reference_variable_method_call {
 
     public static void main(String[] args) {
 
@@ -102,5 +102,4 @@ class Driver extends Employee {
     void drive() {
         System.out.println("Водит");
     }
-
-  }
+ }
