@@ -1,4 +1,4 @@
-package lesson24_Abstract_methods_in_Interface;
+package lesson24_Abstract_methods_in_Interface_Java7;
 
 public class Abstract_classes_and_methods {
 
