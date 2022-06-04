@@ -40,7 +40,7 @@ public class Return_type_and_reference_varuable {
         /**
          * Потому что в конченом итоге любой объект в  java это child класс класса Object
          */
-}
+ }
 
 class Employee {
 
