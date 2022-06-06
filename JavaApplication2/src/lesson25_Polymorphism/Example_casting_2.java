@@ -1,7 +1,23 @@
 package lesson25_Polymorphism;
 
-public class Example {
-
+public class Example_casting_2 {
+ public static void main(String[] args) {
+        Test3 t = new Test3();
+        System.out.println(((Test1)t).a); // 5
+        /**
+         * Мы говорим компилятору: воспринимай переменную t как переменную типа Test1, а из-за того , что переменные
+         * имеют compile time binding, dj время компиляции уже известно, что переменная "a" относится к классу test1 и 
+         * поэтому на экран будет выводится 5
+         */
+        ((Test1)t).abc();
+        
+        /**
+         * output:
+         * 5
+         * ок3
+         * ок2
+         */
+    }
 }
 
 class Test1 {
@@ -40,15 +56,6 @@ class Test3 extends Test2 {
          */
         
     }
-    public static void main(String[] args) {
-        Test3 t = new Test3();
-        System.out.println(((Test1)t).a); // 5
-        /**
-         * Мы говорим компилятору: воспринимай переменную t как переменную типа Test1, а из-за того , что переменные
-         * имеют compile time binding, dj время компиляции уже известно, что переменная "a" относится к классу test1 и 
-         * поэтому на экран будет выводится 5
-         */
-        ((Test1)t).abc();
-    }
+   
 }
 
