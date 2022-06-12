@@ -18,7 +18,7 @@ package lesson27_Exсeptions;
  * 1.Exception
  * 2.Error
  * у них есть свои subклассы свои errors и exceptions(то же IOExceptions является subклассом Exception)
- * одним из самых важных sub классов Exception является RunTimeException
+ * одним из самых важных sub классов Exception является RunTimeException, у него тоже есть свои sub классы
  */
 
 public class Exceptions {
