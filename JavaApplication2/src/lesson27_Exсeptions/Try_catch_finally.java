@@ -5,6 +5,12 @@ package lesson27_Exсeptions;
  * который всегда выполняется, в независимости от того есть исключения или нет
  * try и catch могут быть несколько блоков для разных исключений, а finally блок может быть только один
  * отдельно try без catch или finally писать нельзя, finally может не быть вовсе, но для исключений типа FileNotFoundException обязательно нужен catch
+ * finally выполняется даже в том случае если в try или catch блоке имеется return statement
+ * finally блок не выполняется только в том случае если мы прекращаем работу программы с помощью Sistem.exit в блоке try или catch блоке или же происходит
+ * круение JVM или, например операционной системы
+ * если в методе есть return statement имеется и в catch блоке и в finally блоке , то output метода будет возвращаемое значение из finally блока
+ * если return statement в catch блоке возвращает primitive data type, то в finally блоке мы его изменить не сможем.Если же return statement в catch блоке
+ * возвращает reference data type, то в finally блоке мы его изменить сможем(естественно если тип mutable)
  */
 
 public class Try_catch_finally {

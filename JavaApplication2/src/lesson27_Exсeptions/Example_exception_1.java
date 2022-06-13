@@ -4,7 +4,7 @@ package lesson27_Exсeptions;
 import java.io.*;
 ;
 
-public class Example {
+public class Example_exception_1 {
     
 }
 

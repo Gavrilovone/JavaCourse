@@ -8,7 +8,7 @@ public class FileImputStream_class {
     
     public static void main(String[] args) throws Exception {
         File f = new File("test.txt");
-      //  FileImputStream fis = new  FileImputStream(f); // в параметре указываем к какому файлу будем обращаться
-      //  fis.read(); // с помощью этого потока можно читать что-то
+      FileImputStream fis = new  FileImputStream(f); // в параметре указываем к какому файлу будем обращаться
+        fis.read(); // с помощью этого потока можно читать что-то
     }
 }
