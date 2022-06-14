@@ -35,4 +35,4 @@ class Test7 {
        Это блок finally
        6
      */
-}
+} 

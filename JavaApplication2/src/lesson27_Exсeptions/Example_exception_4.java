@@ -11,7 +11,7 @@ class Test8 {
     void abc() throws FileNotFoundException {
         try {
             File f = new File("test.txt");
-            var fis = new FileInputStream(f);
+            FileInputStream fis = new FileInputStream(f);
 
         } catch (FileNotFoundException e) {
             System.out.println("Exception пойман и немного обработан");
