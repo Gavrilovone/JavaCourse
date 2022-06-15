@@ -2,7 +2,7 @@
 package lesson27_Exсeptions;
 
 
-public class Example_exception_7 {
+public class Example_exception_7_nested {
     
 }
 
