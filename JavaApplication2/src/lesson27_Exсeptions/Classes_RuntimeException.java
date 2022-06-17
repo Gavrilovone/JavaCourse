@@ -18,6 +18,8 @@ package lesson27_Exсeptions;
  * 
  * NullPointerException
  * 
+ * NumberFormatException - наследник llegalArgumentException
+ * 
  */
 public class Classes_RuntimeException {
     
