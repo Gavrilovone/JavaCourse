@@ -39,3 +39,4 @@ class Student extends Hummen2 {
         Student.rest();
     }
 }
+  

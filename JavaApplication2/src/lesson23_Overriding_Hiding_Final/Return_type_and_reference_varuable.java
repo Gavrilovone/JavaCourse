@@ -1,5 +1,5 @@
 package lesson23_Overriding_Hiding_Final;
-
+    
 public class Return_type_and_reference_varuable {
 
      public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Return_type_and_reference_varuable {
         Teacher t = new Teacher(); 
         Driver dк = new Driver(); 
         Employee e = new Employee(); 
-        
+              
         /**
          * Но когда мы ссылаемся на объект, тип этой refernce переменной  и тип самого объекта на который мы ссылаемся может быть разные
          * но переменная не может ссылаться на объект любого типа, есть определенные правила.
@@ -82,7 +82,7 @@ class Teacher extends Employee {
         System.out.println("Учит");
     }
 
-}
+ }
 
 class Driver extends Employee {
 
@@ -92,5 +92,6 @@ class Driver extends Employee {
         System.out.println("Водит");
     }
 
- }
+}
 
+  

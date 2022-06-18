@@ -23,13 +23,13 @@ public class Method_overriding {
         Employee e = new Employee();
         Teacher1 t = new Teacher1();
         Employee e2 = new Teacher1();
-       
+         
         e.eat();// кушает работник
         t.eat(); // кушает учитель
         e2.eat(); // кушает учитель
     }
 }
-
+  
 class Employee {
 
     double salary = 100;
@@ -59,6 +59,7 @@ class Teacher1 extends Employee {
         System.out.println("Кушает учитель");
     }
         
-}
+ }
+   
 
-
+  

@@ -1,9 +1,9 @@
 package lesson23_Overriding_Hiding_Final;
-
+   
 public class Reference_variable_method_call {
 
     public static void main(String[] args) {
-
+    
         /**
          * Какие переменные мы можем вызывать и какие методы, с помощью reference variable:
          */
@@ -20,7 +20,7 @@ public class Reference_variable_method_call {
          * он всегда смотрит на тип переменной, а у Employee нет метода treat, он есть у его child класса но не у него. а классу 
          * Doctor присущи все переменные и методы Employee
          */
-                 
+                   
         Doctor d2 = new Hirurg();
         System.out.println(d2.salary);
         System.out.println(d2.name);
