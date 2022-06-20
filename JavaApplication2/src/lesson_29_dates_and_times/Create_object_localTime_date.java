@@ -1,7 +1,7 @@
 
 package lesson_29_dates_and_times;
 import java.time.*;
-public class Create_object_localTime_date {
+public class Create_object_LocalTime_date {
     public static void main(String[] args) {
         /**
          * LocalDate ld = new LocalDate(2022, 6, 18); - так писать нельзя, потому что LocalDate имеет private конструктор, тоесть
@@ -55,6 +55,19 @@ public class Create_object_localTime_date {
            * методы of для LocalDateTime:
            * public static LocalTime of(int год, int месяц int день,_месяца int час, int минута)
            */
+          LocalDateTime ldt1 = LocalDateTime.of(2022, 6, 20, 5, 28);
+          System.out.println(ldt1); // 2022-06-20T05:28
+          /**
+           * можно в качестве параметров использовать LocalDate и LocalTime:
+           */
+          LocalDateTime ldt2 = LocalDateTime.of(ld1, lt1);
+          System.out.println(ldt2); // 2022-06-18T08:20
+          
+          /**
+           * при некорректном указании парметров выбрасываетя сответствующий exception
+           */
+          
+          
          
           
           

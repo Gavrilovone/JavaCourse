@@ -2,7 +2,7 @@
 package lesson27_Exсeptions;
 
 
-public class IllegalStateException {
+public class IllegalStateException_exception {
     
 }
 class AirPlane{
@@ -19,7 +19,7 @@ class AirPlane{
          * вызов метода ожидать абсолютно не в тему, как он может попасть в ожидание если он летит
          */
         if(condition.equals("In the air")){
-        // throw new IllegalStateException("the plane is already in the air");
+        throw new IllegalStateException("the plane is already in the air");
         }
         condition = "penfing";
         System.out.println("airplane waiting to fly");
@@ -27,7 +27,7 @@ class AirPlane{
     
     public void flightCancellation(){ // отмена полета
     if(condition.equals("In the air")){
-        // throw new IllegalStateException("the plane is already in the air");
+        throw new IllegalStateException("the plane is already in the air");
         }
     condition = "flight canceled"; // полет отменен
         System.out.println("flight airplane canceled");
