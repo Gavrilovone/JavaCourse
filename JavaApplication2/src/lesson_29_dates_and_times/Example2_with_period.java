@@ -1,13 +1,11 @@
 
 package lesson_29_dates_and_times;
 import java.time.*;
-/**
- * класс period имеет access
- */
+
 public class Example2_with_period {
     static void changeDuty(LocalDate start, LocalDate theEnd, Period p){
         LocalDate date = start;
-        while(date.isBefore(theEnd)){ // конец учбного года
+        while(date.isBefore(theEnd)){ // конец учебного года
             System.out.println("the date has come " + date + " it's time to change the attendant");
             date = date.plus(p); // здесь мы меняем уже не конкретно месяц, а в зависимости от того что это месяц , год неделя или день
         }

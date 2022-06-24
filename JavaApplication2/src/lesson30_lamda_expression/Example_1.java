@@ -1,0 +1,119 @@
+package lesson30_lamda_expression;
+
+import java.util.ArrayList;
+
+public class Example_1 {
+
+}
+
+class Test1 {
+
+}
+
+class Student {
+
+    String name;
+    char sex;
+    int age;
+    int course;
+    double avgGrade;
+
+    Student(String name, char sex, int age, int course, double avgGrade) {
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+        this.course = course;
+        this.avgGrade = avgGrade;
+
+    }
+
+}
+
+class StudentInfo {
+
+    void printStudent(Student st) {
+        System.out.println("Имя студента: " + st.name + ", пол: " + st.sex + ", возраст: " + st.age + ", курс: " + st.course + ", средняя оценка: " + st.avgGrade);
+    }
+
+    /**
+     * создаем метод который выводит на экран студентов выше определенной оценки
+     */
+    void printStudentOverGrade(ArrayList<Student> aL, double avgGrade) {
+        for (Student s : aL) { // из списка по одному берутся студенты и проверяется ксловие
+            if (s.avgGrade > avgGrade) {
+                printStudent(s);
+            }
+        }
+    }
+
+    /**
+     * создаем метод который выводит на экран студентов ниже определенной оценки
+     */
+    void printStudentUnderGrade(ArrayList<Student> aL, double avgGrade) {
+        for (Student s : aL) {
+            if (s.avgGrade < avgGrade) {
+                printStudent(s);
+            }
+        }
+    }
+
+    /**
+     * создаем метод который выводит на экран студентов выше определенного возраста
+     */
+    void printStudentOverAge(ArrayList<Student> aL, int age) {
+        for (Student s : aL) {
+            if (s.age > age) {
+                printStudent(s);
+            }
+        }
+
+    }
+
+    /**
+     * создаем метод который выводит на экран студентов выше определенного возраста
+     */
+    void printStudentUnderAge(ArrayList<Student> aL, int age) {
+        for (Student s : aL) {
+            if (s.age < age) {
+                printStudent(s);
+            }
+        }
+
+    }
+
+    /**
+     * создаем метод который фильтрует студентов по полу
+     */
+    void printStudentBySex(ArrayList<Student> aL, char sex) {
+        for (Student s : aL) {
+            if (s.sex == sex) { // тоесть если мы ищем только парней или только девушек 
+                printStudent(s);
+            }
+        }
+
+    }
+
+    /**
+     * создаем смешанный метод
+     */
+    void printStudentMixConditions(ArrayList<Student> aL, double avgGrade, int age, char sex) {
+        for (Student s : aL) {
+            if (s.avgGrade > avgGrade && s.age < age && s.sex == sex) {
+                 /**
+             * если оценка больше той которой задаем и возраст меньше того которого задаем и пол тот который задаем, то выводим на экран
+             */
+                printStudent(s);
+            }
+        }
+
+    }
+    
+    public static void main(String[] args) {
+        ArrayList<Student> list = new ArrayList<>();
+        Student st1 = new Student("Иван", 'm', 22, 3, 8.3);
+        Student st2 = new Student("Николай", 'm', 28, 2, 6.4);
+        Student st3 = new Student("Елена", 'f', 19, 1, 8.9);
+        Student st4 = new Student("Петр", 'm', 35, 4, 7);
+        Student st5 = new Student("Мария", 'а', 23, 3, 9.1);
+    }
+}
