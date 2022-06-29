@@ -38,7 +38,7 @@ class StudentInfo {
      * создаем метод который выводит на экран студентов выше определенной оценки
      */
     void printStudentOverGrade(ArrayList<Student> aL, double avgGrade) {
-        for (Student s : aL) { // из списка по одному берутся студенты и проверяется ксловие
+        for (Student s : aL) { // из списка по одному берутся студенты и проверяется условие
             if (s.avgGrade > avgGrade) {
                 printStudent(s);
             }

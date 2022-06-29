@@ -5,9 +5,6 @@ import java.util.ArrayList;
 public class Example_2 {
 }
 
-class Test2 {
-}
-
 class Student {
 
     String name;
@@ -32,13 +29,13 @@ class Student {
  */
 interface StudentChecks {
 
-    boolean testStudent(Student s);
+    boolean test(Student s);
 }
 
 class FindStudentOverGrade implements StudentChecks {
 
     @Override
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return s.avgGrade > 8.5;
     }
 }
@@ -54,18 +51,18 @@ class StudentInfo {
          * то-есть в параметр вмето sc можно вставить объект любого класса который имплементрирует интерфейс StudentChecks 
          */
         for(Student s: aL){
-            if(sc.testStudent(s)){ 
+            if(sc.test(s)){ 
                 printStudent(s);
             }
             /**
-             * используя метод testStudent объекта этого типа StudentChecks а тип это интерфейс ( а у объектов этого типа метод testStudent всегда есть, 
-             * потому что он имплементирует интерфейс StudentChecks и должен оверайдить метод testStude) по-этому мы вызываем на sc метод testStudent и 
+             * используя метод test объекта этого типа StudentChecks а тип это интерфейс ( а у объектов этого типа метод test всегда есть, 
+             * потому что он имплементирует интерфейс StudentChecks и должен оверайдить метод test по-этому мы вызываем на sc метод test и 
              * помещаем в этот метод этого студентаs которого мы перебираем в цикле из списка
              * 
-             * таким образом, если мы в параметре(StudentChecks sc) используем объект класса FindStudentOverGrade и если условие sc.testStudent(s) - true 
+             * таким образом, если мы в параметре(StudentChecks sc) используем объект класса FindStudentOverGrade и если условие sc.test(s) - true 
              * тоесть s.avgGrade > 8.5; то выводи на экран этого студента
              * И если мы будем использовать в параметре другой объект какого-то класса который имплементирует StudentChecks инетерфейс, то в зависимости 
-             * от того как он перезаписал метод testStudent,  так и будет исполнена фильтрация в данном примере
+             * от того как он перезаписал метод test,  так и будет исполнена фильтрация в данном примере
              */
         }
     
@@ -103,7 +100,7 @@ class StudentInfo {
         class FindStudentUnderGrade implements StudentChecks {
 
             @Override
-            public boolean testStudent(Student s) {
+            public boolean test(Student s) {
                 return s.avgGrade < 9;
            }
        }
@@ -111,7 +108,7 @@ class StudentInfo {
            class FindStudentOverAge implements StudentChecks {
 
             @Override
-            public boolean testStudent(Student s) {
+            public boolean test(Student s) {
                 return s.age > 25;
            }
        }
@@ -119,7 +116,7 @@ class StudentInfo {
            class FindStudentUnderAge implements StudentChecks {
 
             @Override
-            public boolean testStudent(Student s) {
+            public boolean test(Student s) {
                 return s.age < 27;
            }
        }
@@ -127,7 +124,7 @@ class StudentInfo {
            class FindStudentBySex implements StudentChecks {
 
             @Override
-            public boolean testStudent(Student s) {
+            public boolean test(Student s) {
                 return s.sex == 'm'; //  конткретно должны указывать какой пол мы ищем
            }
        }
@@ -135,7 +132,7 @@ class StudentInfo {
            class FindStudentMixCondition implements StudentChecks {
 
             @Override
-            public boolean testStudent(Student s) {
+            public boolean test(Student s) {
                 return (s.avgGrade > 7.2 && s.age < 23 && s.sex == 'f' );
            }
        }
@@ -182,9 +179,9 @@ class StudentInfo {
         
         /**
          * еще раз минус этого способа в том, что проверки надо для фильтрации конкретно прописывать, но зато класс StudentInfo мы уже не трогаем
-         * мы один раз написали метод testStudent  и он будет подходить под все.Если нам понадобитс что-то добавить, то нужно будет каждый раз создавать
+         * мы один раз написали метод test  и он будет подходить под все.Если нам понадобитс что-то добавить, то нужно будет каждый раз создавать
          * новые классы которые имплементируют этот интерфейс и создавать объект этих классов, чтобы использовать их как параметр нашего метода
-         * вообщем этот способ тоже в чем то хуже, в чем то лучше, но есть 3й способ, самый короткий и простой это использование лямда выражений (см.Example-3)
+         * вообщем этот способ тоже в чем то хуже, в чем то лучше, но есть 3й способ, самый короткий и простой это использование лямда выражений (см.Example_3)
          */
         
         
