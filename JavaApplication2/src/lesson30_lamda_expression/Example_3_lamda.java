@@ -2,7 +2,7 @@ package lesson30_lamda_expression;
 
 import java.util.ArrayList;
 
-public class Example_3 {
+public class Example_3_lamda {
 }
 
 class Student {
@@ -103,3 +103,11 @@ class StudentInfo {
     }
 }
 
+/**
+ * вместо обычного интерфейса с одним методом, можно работать с так называемым интерфесом Predicate
+ * 
+ * public interface Predicate<T>{ -  один раз прописываем тип данных например Student, Animal
+ * boolean test(T t); -  а здесь java автоматически заменяет T  на соответствующий тип  (см.Method_Predicate)
+ * }
+ * 
+ */
