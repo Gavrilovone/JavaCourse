@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/Lesson30_lamda_part2/Methods_lamda_foreach_removeIf.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/Lesson30_lamda_part2/Function_interfaces.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/Lesson30_lamda_part2/Scope_variables.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson30_lamda_expression/Example_3_lamda.java</file>
-            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/Lesson30_lamda_part2/Methods_lamda_sort.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson31_Generics/Generics.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson31_Generics/Problem_with_method_overloading.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson31_Generics/Parametrized_methods.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson31_Generics/Parametrized_class.java</file>
+            <file>file:/D:/JavaPro/Course/JavaCourse/JavaApplication2/src/lesson31_Generics/Type_erasure.java</file>
         </group>
     </open-files>
 </project-private>
